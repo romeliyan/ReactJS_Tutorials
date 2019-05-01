@@ -18,14 +18,22 @@
   <body>
     <div id="app"></div>
 
-    <!--react component - class based component -->
+    <!-- Adding state to the componenet -->
     <script type="text/babel">
       class App extends React.Component {
+        // define a state property inside the component
+        state = {
+          name: "Romesh",
+          age: 25
+        };
+
         render() {
           return (
             <div className="app-content">
               <h1> Hello World ! </h1>
-              <p>{Math.random() * 10}</p>
+              <p>
+                My name is: {this.state.name} and I am {this.state.age}
+              </p>
             </div>
           );
         }
