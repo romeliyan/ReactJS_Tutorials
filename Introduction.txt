@@ -1,7 +1,0 @@
-
-
-React is a     -->  JavaScript Library created by Facebook.
-
-Also used by   -->  NetFlix and Instagram.
-
-Used to create -->  JS driven dynamic Web Apps.
