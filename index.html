@@ -27,17 +27,18 @@
           age: 25
         };
 
-        handleClick(e) {
-          console.log(e.target);
-        }
+        handleClick = e => {
+          // console.log(this.state);
+          this.setState({ name: "Roma", age: 35 });
+        };
 
-        handleMouseOver(e) {
+        handleMouseOver = e => {
           console.log(e);
-        }
+        };
 
-        handleCopy(e) {
+        handleCopy = e => {
           console.log("Try being original for once");
-        }
+        };
 
         render() {
           return (
