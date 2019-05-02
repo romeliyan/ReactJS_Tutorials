@@ -18,44 +18,23 @@
   <body>
     <div id="app"></div>
 
-    <!-- Adding state to the componenet -->
     <script type="text/babel">
       class App extends React.Component {
-        // define a state property inside the component
         state = {
           name: "Romesh",
           age: 25
         };
 
-        handleClick = e => {
-          // console.log(this.state);
-          this.setState({ name: "Roma", age: 35 });
-        };
-
-        handleMouseOver = e => {
-          console.log(e);
-        };
-
-        handleCopy = e => {
-          console.log("Try being original for once");
-        };
-
         render() {
           return (
             <div className="app-content">
-              <h1> Hello World ! </h1>
-              <p>
-                My name is: {this.state.name} and I am {this.state.age}
-              </p>
-              <button onClick={this.handleClick}>Click Me</button>
-              <button onMouseOver={this.handleMouseOver}>Hover Me</button>
-              <p onCopy={this.handleCopy}>What we think we become</p>
+              <h1>My name is {this.state.name}</h1>
             </div>
           );
         }
       }
 
-      ReactDOM.render(<App />, document.getElementById("app"));
+      ReactDOM.render(<App />, Document.getElementById("app"));
     </script>
   </body>
 </html>
