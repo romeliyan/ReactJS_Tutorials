@@ -2,7 +2,7 @@ import React from "react";
 
 const Ninjas = ({ ninjas }) => {
   const ninjaList = ninjas.map(ninja => {
-    if (ninja.age > 50) {
+    if (ninja.age > 20) {
       return (
         <div className="ninja" key={ninja.id}>
           <div> Name : {ninja.name}</div>
